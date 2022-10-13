@@ -2,9 +2,9 @@ import React, { Children } from "react";
 
 import "../css/todoList.css";
 
-export default function Button({ className, buttonType, onClick, children }) {
+export default function Button({ children, ...props }) {
   return (
-    <button className={className} type={buttonType} onClick={onClick}>
+    <button {...props}>
       {" "}
       {children}{" "}
     </button>
