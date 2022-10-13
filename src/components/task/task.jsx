@@ -1,4 +1,3 @@
-import React from "react";
 import "../../css/todoList.css";
 
 export default function Task({ text, onClick, buttonType }) {
