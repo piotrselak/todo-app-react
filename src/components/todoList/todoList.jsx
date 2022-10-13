@@ -22,7 +22,7 @@ export default function TodoList() {
   }
 
   return (
-    <div className="container">
+    <div className="todo-list">
       <ul className="task-list">
         {tasks.map((task, ind) => (
           <li key={ind}>
