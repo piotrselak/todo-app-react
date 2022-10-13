@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import Task from "../task/task";
 
-import "../../css/todoList.css";
+import "./todoList.css";
 
 export default function TodoList() {
   const [tasks, setTasks] = useState([]);

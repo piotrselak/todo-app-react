@@ -1,4 +1,4 @@
-import "../../css/todoList.css";
+import "./task.css";
 
 export default function Task({ text, onClick, buttonType }) {
   return (

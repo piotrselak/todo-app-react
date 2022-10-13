@@ -8,7 +8,6 @@
   display: flex;
   flex-direction: column;
   padding:0;
-  
 }
 
 .task-list {
@@ -16,13 +15,6 @@
   display: flex;
   flex-direction: column;
   gap: 0.1em;
-}
-
-.task {
-  background-color: #2EC4B6;
-  color: #FFFF;
-  padding: 1em;
-  border-radius: 5px;
 }
 
 .interaction {
