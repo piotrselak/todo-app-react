@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 
 import Task from "./task";
-import Button from "./button";
 
 import "../css/todoList.css";
 
@@ -38,9 +37,9 @@ export default function TodoList() {
       </ul>
       <div className="interaction">
         <input type="text" value={currInput} onChange={handleInput}></input>
-        <Button className="submit" buttonType="button" onClick={handleAddClick}>
+        <button className="submit" buttonType="button" onClick={handleAddClick}>
           &#10004;
-        </Button>
+        </button>
       </div>
     </div>
   );
