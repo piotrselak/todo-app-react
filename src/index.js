@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import "./components/todoList"
-import TodoList from './components/todoList';
+import "./components/todoList/todoList"
+import TodoList from './components/todoList/todoList';
 import "./css/index.css"
 import reportWebVitals from './reportWebVitals';
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/todoList.css";
+import "../../css/todoList.css";
 
 export default function Task({ text, onClick, buttonType }) {
   return (
