@@ -7,7 +7,7 @@ export default function Task({ text, onClick, buttonType }) {
     <div className="task">
       {text}
       <Button type={buttonType} onClick={onClick}>
-        X
+        &#9747;
       </Button>
     </div>
   );

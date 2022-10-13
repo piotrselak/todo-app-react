@@ -25,23 +25,21 @@ export default function TodoList() {
 
   return (
     <div className="container">
-      <div className="task-list">
-        <ul>
-          {tasks.map((task, ind) => (
-            <li key={ind}>
-              <Task
-                text={task}
-                buttonType="button"
-                onClick={() => handleDeleteClick(ind)}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
+      <ul className="task-list">
+        {tasks.map((task, ind) => (
+          <li key={ind}>
+            <Task
+              text={task}
+              buttonType="button"
+              onClick={() => handleDeleteClick(ind)}
+            />
+          </li>
+        ))}
+      </ul>
       <div className="interaction">
         <input type="text" value={currInput} onChange={handleInput}></input>
         <Button className="submit" buttonType="button" onClick={handleAddClick}>
-          Add new task
+          &#10004;
         </Button>
       </div>
     </div>
