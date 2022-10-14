@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Task from "../task/task";
+import TaskList from "../taskList/taskList";
 
 import "./todoList.css";
 
@@ -9,7 +9,7 @@ export default function TodoList() {
   const [currInput, setCurrInput] = useState("");
 
   function handleAddClick() {
-    setTasks([...tasks, currInput]);
+    setTasks([...tasks, { text: currInput }]);
     setCurrInput("");
   }
 
@@ -23,17 +23,7 @@ export default function TodoList() {
 
   return (
     <div className="container">
-      <ul className="task-list">
-        {tasks.map((task, ind) => (
-          <li key={ind}>
-            <Task
-              text={task}
-              buttonType="button"
-              onClick={() => handleDeleteClick(ind)}
-            />
-          </li>
-        ))}
-      </ul>
+      <TaskList tasks={tasks} deleteClick={handleDeleteClick} />
       <div className="interaction">
         <input type="text" value={currInput} onChange={handleInput}></input>
         <button className="submit" onClick={handleAddClick}>
