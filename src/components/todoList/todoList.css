@@ -18,13 +18,6 @@
   gap: 0.1em;
 }
 
-.task {
-  background-color: #2EC4B6;
-  color: #FFFF;
-  padding: 1em;
-  border-radius: 5px;
-}
-
 .interaction {
   display: flex;
 }

@@ -1,0 +1,11 @@
+.task {
+  background-color: #2EC4B6;
+  color: #FFFF;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+button {
+  border-radius: 0;
+  border: none;
+}
