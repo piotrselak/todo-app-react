@@ -13,5 +13,5 @@ ul {
   height: min-content;
   display: flex;
   flex-direction: column;
-  gap: 0.1em;
+  gap: 0.3em;
 }
