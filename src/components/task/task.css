@@ -1,0 +1,28 @@
+.task {
+  background-color: #ECE2D0;
+  padding: 1em;
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 75% 25%;
+}
+
+p {
+  font-family: Helvetica;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.delete-button {
+  border-radius: 10px;
+  border: none;
+  background-color: #E56399;
+  color: white;
+  font-size: 2em;
+}
+
+.delete-button:hover {
+  background-color: #a0456b;
+}
